@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-reveal";
+import { createTheme } from "@mui/material/styles";
 
 import "./style/homeContact.css";
 import { TextField } from "@mui/material";
@@ -8,6 +9,24 @@ import { TextField } from "@mui/material";
 function HomeContact(props) {
   const { t } = useTranslation();
   const contactFormId = props.id;
+
+  const theme = createTheme({
+    palette: {
+      primary: {
+        light: "#fff",
+        main: "#3f50b5",
+        dark: "#002884",
+        contrastText: "#fff",
+      },
+      secondary: {
+        light: "#ff7961",
+        main: "#f44336",
+        dark: "#ba000d",
+        contrastText: "#000",
+      },
+    },
+  });
+
   return (
     <>
       <div className="home-contact-bg h-screen w-full text-white flex flex-col items-center justify-center">
@@ -45,6 +64,19 @@ function HomeContact(props) {
                 variant="standard"
                 className="w-[95%] md:w-[45%]"
                 spellCheck="false"
+                sx={{
+                  "& label.Mui-focused": {
+                    color: "white",
+                  },
+                  "& .MuiInput-underline:after": {
+                    borderBottomColor: "white",
+                  },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "white",
+                    },
+                  },
+                }}
               />
               <TextField
                 id="standard-basic"
@@ -52,6 +84,22 @@ function HomeContact(props) {
                 variant="standard"
                 className="w-[95%] md:w-[45%]"
                 spellCheck="false"
+                sx={{
+                  "& label.Mui-focused": {
+                    color: "white",
+                  },
+                  "& css-1x51dt5-MuiInputBase-input-MuiInput-input": {
+                    borderBottom: "white",
+                  },
+                  "& .MuiInput-underline:after": {
+                    borderBottomColor: "white",
+                  },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "white",
+                    },
+                  },
+                }}
               />
             </div>
             <div className="form-input w-full flex md:gap-16 gap-5 flex-col md:flex-row justify-center items-start">
@@ -61,6 +109,19 @@ function HomeContact(props) {
                 variant="standard"
                 className="w-[95%] md:w-[45%]"
                 spellCheck="false"
+                sx={{
+                  "& label.Mui-focused": {
+                    color: "white",
+                  },
+                  "& .MuiInput-underline:after": {
+                    borderBottomColor: "white",
+                  },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "white",
+                    },
+                  },
+                }}
               />
               <TextField
                 id="standard-basic"
@@ -68,14 +129,21 @@ function HomeContact(props) {
                 variant="standard"
                 className="w-[95%] md:w-[45%]"
                 spellCheck="false"
+                sx={{
+                  "& label.Mui-focused": {
+                    color: "white",
+                  },
+                  "& .MuiInput-underline:after": {
+                    borderBottomColor: "white",
+                  },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "white",
+                    },
+                  },
+                }}
               />
             </div>
-            {/* <TextField
-            id="standard-basic"
-            label={t("HomeContact-Message")}
-            variant="standard"
-            className="form-input w-[90%]"
-          /> */}
             <div className="form-input w-full flex justify-center items-start flex-col mt-4 md:mt-0">
               {" "}
               <label htmlFor="message" className="text-white md:pl-3">
@@ -83,7 +151,7 @@ function HomeContact(props) {
               </label>
               <textarea
                 id="message"
-                className="form-input w-[98%] h-[60px] md:h-[100px] text-xl py-2 md:mx-3 bg-transparent placeholder:text-white border-b border-solid border-white border-opacity-70 focus:border-b-2 focus:border-opacity-100 resize-none focus:outline-none"
+                className="form-input w-[98%] h-[60px] md:h-[100px] text-xl py-2 md:mx-3 bg-transparent placeholder:text-white border-b border-solid border-gray-900 border-opacity-70 focus:border-b-2 focus:border-white focus:border-opacity-100 resize-none focus:outline-none"
                 style={{ fontFamily: "Gilroy-Regular" }}
                 spellCheck="false"
               ></textarea>
@@ -98,31 +166,6 @@ function HomeContact(props) {
             </div>
           </form>
         </Fade>
-        <style>
-          {`
-            
-            .form-input label {
-                color: #ffffffcc !important;
-                font-size: 20px;
-            }
-            
-            .form-input input::placeholder {
-                color: #fff !important;
-            }
-            
-            .css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
-                border-bottom: 1px solid #ffffffb9 !important;
-            }
-            
-            .css-v4u5dn-MuiInputBase-root-MuiInput-root:after {
-                border-bottom: 2px solid #fff !important;
-            }
-            
-            .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-                color: #ffffffd3 !important;
-            }
-            `}
-        </style>
       </div>
     </>
   );
