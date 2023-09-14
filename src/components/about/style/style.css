@@ -1,0 +1,32 @@
+.title-bg {
+    background-color: rgb(240, 248, 255);
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 80%);
+    border-radius: 5px;
+}
+
+.bg-aboutus {
+    background: linear-gradient(90deg, rgba(106, 4, 15, .8) 0%, rgba(231, 93, 4, .8) 100%), url(../assets/factory2.jpg);
+    /* background: url(../assets/factory2.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+}
+
+
+.underline-style {
+    position: relative;
+    display: inline-block;
+    padding-bottom: -5px;
+}
+
+.underline-style::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 6px;
+    left: 1rem;
+    right: 1.2rem;
+    display: block;
+    height: 12px;
+    background: #ede862;
+}

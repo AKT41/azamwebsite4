@@ -1,0 +1,42 @@
+{
+  "NavbarHome": "Ana Sayfa",
+  "NavbarAbout": "Hakkımızda",
+  "NavbarContact": "İletişim",
+  "NavbarProducts": "Ürünler",
+  "NavbarGetOffer": "Teklif Al",
+
+  "ProductBoiler": "Boylerler",
+  "ProductCombi": "KOMBİLER",
+  "ProductWaterHeaters": "Su Isıtıcıları",
+
+  "404Page-1": "Kaybolmuş gibi görünüyorsunuz",
+  "404Page-2": "aradığınız sayfaya ulaşılamıyor!",
+  "404Page-3": "Ana Sayfaya Dön",
+
+  "Homebg-text1": "GEÇMİŞİM DENEYİMİ İLE",
+  "Homebg-text2": "GELECEĞİN ÜRETİMİ",
+  "Homebg-btn-more": "Daha Fazla",
+  "HomeMiddleProductsText": "ÜRÜNLERİMİZ",
+
+  "HomeContactFormTitle-1": "İLETİŞİM",
+  "HomeContactFormTitle-2": "Formu",
+  "HomeContact-Name": "Adınız Soyadınız",
+  "HomeContact-Compony": "Firmanız",
+  "HomeContact-Email": "E-Posta Adresiniz",
+  "HomeContact-Phone": "Telefon Numaranız",
+  "HomeContact-Message": "Mesajınız",
+  "HomeContact-Send": "Gönder",
+
+  "AboutBoilerText": "Boylar, sıcak suyun hızlı ve güvenilir bir şekilde sağlandığı cihazlardır. Mutfak, banyo ve temizlik gibi günlük ihtiyaçlarınız için sıcak suyu anında veya depolayarak kullanmanıza olanak tanır. Farklı enerji kaynaklarıyla çalışan çeşitli modelleri bulunmaktadır.",
+  "AboutSlogan": "Biz profesyonellerden oluşan bir ekibiz",
+
+  "AboutUsTitle": "Biz Kimiz?",
+  "AboutUsText": "Yurt ekonomisinde bir asrı bulan geçmişe sahip son 30 yılda sanayi sektöründe de faaliyet gösteren Apaydın ailesinin, yıllardır biriktirdiği endüstriyel bilgi ve tecrübesi ile kurulan Azam TX Isı Teknolojileri 30.000 metrekare kapalı alan içerisinde, emaye kaplı dışı Poliüreten izoleli boyler, kombi ve su ısıtıcıları üretimi yapmakta olup ısı sektöründe yüksek kalite ve uygun fiyat politikası kombinasyonu ile çalışmayı amaçlamaktadır. Azam TX Isı Teknolojileri, kısa sürede iç piyasada saygın bir konuma ulaşmayı ve yerli boyler, kombi ve su ısıtıcısı üreticileri arasında tercih edilen bir marka olmayı hedeflemiştir.",
+
+  
+  "OurMissonTitle": "Misyonumuz",
+  "OurMissonText": "Azam TX Isı Teknolojileri olarak misyonumuz, yüksek kaliteli ısıtma çözümleri sunarak müşterilerimizin konut ve ticari ısıtma ihtiyaçlarını en üst düzeyde karşılamak ve enerji verimliliği ile güvenilirliği sağlamak için mükemmelliğe olan bağlılığımızı sürdürmektir. Müşteri memnuniyetini esas alarak, çevresel sürdürülebilirliğe katkıda bulunmayı ve rekabetçi fiyatlarla yüksek kalitede ürünleri sunmayı amaçlıyoruz.",
+  "OurVisionTitle": "Vizyonumuz",
+  "OurVisionText": "Azam TX Isı Teknolojileri olarak vizyonumuz, sektördeki önde gelen bir marka olarak tanınmak ve tercih edilmektir. Yüksek kalite standartlarına sahip ürünlerimizle iç pazarda saygın bir konum elde etmeyi ve müşterilerimizin güvenini kazanmayı hedefliyoruz. Ayrıca, AR-GE departmanımız aracılığıyla sürekli olarak yeni nesil teknolojiler geliştirerek sektörde en iyi olmayı amaçlıyoruz. Müşterilerimize maliyet tasarrufu sağlayarak çevresel sürdürülebilirliğe katkıda bulunmayı ve en iyi hizmeti sunmayı taahhüt ediyoruz."
+
+}

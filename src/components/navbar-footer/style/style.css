@@ -1,0 +1,225 @@
+.nav-shadow {
+    font-family: "Gilroy-Light";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 25%;
+    position: fixed;
+    z-index: 30;
+}
+
+.nav-style {
+    position: relative;
+}
+
+.nav-style::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 9.5rem;
+    right: 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-item {
+    transition: all .3s;
+}
+
+.nav-item:hover {
+    color: #ff0000a6;
+}
+
+/* 
+.active span {
+    position: relative;
+    z-index: 0;
+}
+
+.active span::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 2px;
+    left: -4px;
+    right: -4px;
+    display: block;
+    height: 6px;
+} */
+
+/* for footer */
+
+.ul-product {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 100%;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.btn-graident {
+    background: linear-gradient(77.04deg, rgba(155, 2, 8, 1) 0%, rgba(218, 47, 2, 1) 100%);
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    font-family: 'Antonio', sans-serif;
+}
+
+.outline-outward {
+    display: inline-block;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transform: translateZ(0);
+    transition: all .3s ease-out;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.outline-outward:before {
+    content: "";
+    position: absolute;
+    border: #ececec00 solid 3px;
+    border-radius: 9999px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.3s;
+    transition-property: top right bottom left;
+}
+
+.outline-outward:hover:before {
+    border-color: rgba(235, 50, 4, 0.548);
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+}
+
+.nav-list .divider {
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    z-index: 20;
+    bottom: -1.6rem;
+    left: var(--left);
+    width: var(--width);
+    transition: all .3s;
+}
+
+/* .active {
+    position: relative;
+    z-index: 10;
+    padding-bottom: 1.1rem;
+    transition: all .3s;
+}
+
+.active::before,
+.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    background-color: red;
+    width: calc(50% + 4rem);
+}
+
+.active::before {
+    left: 0;
+}
+
+.active::after {
+    right: 0;
+} */
+
+
+/* footer*/
+
+.ul-product.open {
+    max-height: 200px;
+    backdrop-filter: blur(10px) !important;
+    padding: 10px;
+}
+
+.footer-bg {
+    background: linear-gradient(180deg, rgba(23, 24, 22, 0) 0%, rgba(23, 24, 22, 1) 10%, rgba(23, 24, 22, 1) 100%);
+    padding: 20px 0;
+    font-family: "Gilroy-Regular";
+}
+
+.footer-items .footer-item::after {
+    content: "|";
+    color: #B32518;
+    margin: 0 0 0 .7rem;
+}
+
+.footer-items .footer-item:first-child::before,
+.footer-items .footer-item:last-child::after {
+    content: none;
+}
+
+.footer-items .footer-item:nth-child(even) {
+    color: #B32518;
+}
+.blur-effect {
+    position: relative;
+}
+
+.blur-effect::before {
+    content: '';
+    margin: -35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+/* .home .active .home-active {
+    background-color: red !important;
+} */
+
+
+.underlineffect-f {
+    position: relative;
+    overflow: hidden;
+}
+
+.underlineffect-f::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underlineffect-f:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.underlineffect-f.active::after {
+    background-color: transparent;
+    transform: scaleX(0);
+}
+
+@media screen and (min-width: 768px) {
+
+    /* .active span::before {
+        background-color: #ff0000;
+    } */
+}
+
+@media screen and (max-width: 1300px) {
+    .nav-style {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}

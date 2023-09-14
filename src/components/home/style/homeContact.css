@@ -1,0 +1,36 @@
+.home-contact-bg {
+    background: linear-gradient(90deg, rgba(106, 4, 15, .8) 0%, rgba(231, 93, 4, .8) 100%), url(../assets/tesis.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.form-input input {
+    color: #fff !important;
+    font-family: "Gilroy-Regular" !important;
+    font-size: 20px;
+}
+
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+    font-family: "Gilroy-Regular" !important;
+}
+
+.form-input label {
+    color: #ffffffcc !important;
+    font-size: 20px;
+}
+
+.form-input input::placeholder {
+    color: #fff !important;
+}
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: 1px solid #ffffffb9 !important;
+}
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:after {
+    border-bottom: 2px solid #fff !important;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #ffffffd3 !important;
+}
