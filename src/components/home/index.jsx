@@ -24,7 +24,7 @@ function HomeTop() {
           <div className="text-white  z-10 max-w-7xl md:mx-auto mx-4 flex flex-col items-start justify-center h-full home-text-font uppercase relative">
             <div className="home-bg-graident !left-0 md:left-[5%]" />
             <h1 className="md:text-[7rem] text-[5.5rem] tracking-[1px]">
-              {t("Homebg-text1")}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              {t("Homebg-text1")}
             </h1>
             <h2 className="md:text-[8.5rem] text-[6.4rem] tracking-[1px]">
               {" "}

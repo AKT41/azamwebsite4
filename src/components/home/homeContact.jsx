@@ -98,6 +98,31 @@ function HomeContact(props) {
             </div>
           </form>
         </Fade>
+        <style>
+          {`
+            
+            .form-input label {
+                color: #ffffffcc !important;
+                font-size: 20px;
+            }
+            
+            .form-input input::placeholder {
+                color: #fff !important;
+            }
+            
+            .css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+                border-bottom: 1px solid #ffffffb9 !important;
+            }
+            
+            .css-v4u5dn-MuiInputBase-root-MuiInput-root:after {
+                border-bottom: 2px solid #fff !important;
+            }
+            
+            .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+                color: #ffffffd3 !important;
+            }
+            `}
+        </style>
       </div>
     </>
   );
