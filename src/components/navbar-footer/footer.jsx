@@ -57,9 +57,9 @@ function Footer() {
                     <NavLink to="/Hakkımızda">{t("NavbarAbout")}</NavLink>
                   </li>
                   <li className="footer-item relative group">
-                    <a onClick={toggleMenu} href="##">
+                    <NavLink onClick={toggleMenu} to="/Ürünlerimiz">
                       {t("NavbarProducts")}
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="footer-item">
                     <NavLink to="/İletişim">{t("NavbarContact")}</NavLink>

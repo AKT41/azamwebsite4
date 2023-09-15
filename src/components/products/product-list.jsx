@@ -1,46 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
 
+import { productList } from "./productsdb";
+
 import "./style/style.css";
+
+import "./style/product-card.css";
+import { Link } from "react-router-dom";
 
 function ProductList() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  const productList = {
-    products: [
-      {
-        id: 1,
-        name: "Product 1",
-        price: 100,
-        image: "https://picsum.photos/200/300",
-      },
-      {
-        id: 2,
-        name: "Product 2",
-        price: 200,
-        image: "https://picsum.photos/200/300",
-      },
-      {
-        id: 3,
-        name: "Product 3",
-        price: 300,
-        image: "https://picsum.photos/200/300",
-      },
-      {
-        id: 4,
-        name: "Product 4",
-        price: 300,
-        image: "https://picsum.photos/200/300",
-      },
-      {
-        id: 15,
-        name: "Product 15",
-        price: 1500,
-        image: "https://picsum.photos/200/300",
-      },
-    ],
-  };
+  useEffect(() => {
+    // Initially, display all products
+    setFilteredProducts(productList.products);
+  }, []); // The empty dependency array ensures this effect runs once on mount
 
   function performSearch(query) {
     const filtered = productList.products.filter((product) =>
@@ -52,7 +27,7 @@ function ProductList() {
   function handleSearch(event) {
     const query = event.target.value;
     setSearchQuery(query);
-    performSearch(query); // Arama işlemini tetikle
+    performSearch(query);
   }
   return (
     <>
@@ -141,42 +116,88 @@ function ProductList() {
                 </button>
               </div>
             </div>
-            {filteredProducts.map((product) => (
-              <div
-                className="products-row"
-                style={{
-                  animationName: "none!important",
-                }}
-                key={product.id}
-              >
-                <a href="#">
-                  <button className="cell-more-button">Ürünü İncele</button>
-                </a>
-                <a href="#">
-                  <div className="product-cell image">
-                    <img
-                      src={product.image}
-                      alt="redsi"
-                      className="transition-all duration-500 ease-in-out select-none"
-                    />
-
-                    <span className="capitalize">{product.name}</span>
-                    <div className="product-cell status-cell">
-                      <span className="cell-label">Stok:</span>
-                      <span className="status active">mevcut</span>
-                    </div>
-                    <div className="product-cell category">
-                      <span className="cell-label">Kategori:</span>
-                      {product.name}
-                    </div>
-                    <div className="product-cell price">
-                      <span className="cell-label">Fiyat:</span>
-                      <span className="!text-sm">{product.price}</span>
+            <div className="flex flex-wrap items-center justify-center gap-4 max-w-screen-2xl">
+              {filteredProducts.map((product) => (
+                <div class="wrapper" key={product.id}>
+                  <div class="container">
+                    {/* <div
+                      class="top "
+                      style={{ background: `url(${product.image}) no-repeat center center` }}
+                    ></div> */}
+                    <div className="w-full h-full">
+                      <img
+                        src={product.image}
+                        className="w-full h-full object-cover"
+                        alt=""
+                      />
+                      <div class="bottom"></div>
+                      <div class="left">
+                        <div class="details">
+                          <h1>{product.name}</h1>
+                          <p>£250</p>
+                        </div>
+                        <div class="buy">
+                          <i class="material-icons">add_shopping_cart</i>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="done">
+                          <i class="material-icons">done</i>
+                        </div>
+                        <div class="details">
+                          <h1>Chair</h1>
+                          <p>Added to your cart</p>
+                        </div>
+                        <div class="remove">
+                          <i class="material-icons">clear</i>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </a>
-              </div>
-            ))}
+                  {/* <div class="inside">
+                    <div class="icon">
+                      <i class="material-icons">info_outline</i>
+                    </div>
+                    <div class="contents">
+                      <table>
+                        <tr>
+                          <th>Width</th>
+                          <th>Height</th>
+                        </tr>
+                        <tr>
+                          <td>3000mm</td>
+                          <td>4000mm</td>
+                        </tr>
+                        <tr>
+                          <th>Something</th>
+                          <th>Something</th>
+                        </tr>
+                        <tr>
+                          <td>200mm</td>
+                          <td>200mm</td>
+                        </tr>
+                        <tr>
+                          <th>Something</th>
+                          <th>Something</th>
+                        </tr>
+                        <tr>
+                          <td>200mm</td>
+                          <td>200mm</td>
+                        </tr>
+                        <tr>
+                          <th>Something</th>
+                          <th>Something</th>
+                        </tr>
+                        <tr>
+                          <td>200mm</td>
+                          <td>200mm</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div> */}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

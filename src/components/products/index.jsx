@@ -23,7 +23,7 @@ export default function Products() {
         <Fade top delay={200}>
           {" "}
           <p
-            className="text-xl md:text-2xl text-gray-800 transition-all duration-300 hover:tracking-wider mt-7 title-bg p-4 pr-8"
+            className="text-lg  md:text-2xl text-gray-800 transition-all duration-300 hover:tracking-wider mt-7 title-bg p-4 pr-12"
             style={{
               fontFamily: "Gilroy-SemiBold",
             }}
