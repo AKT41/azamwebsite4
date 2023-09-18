@@ -151,7 +151,7 @@ function HomeContact(props) {
               </label>
               <textarea
                 id="message"
-                className="form-input w-[98%] h-[60px] md:h-[100px] text-xl py-2 md:mx-3 bg-transparent placeholder:text-white border-b border-solid border-gray-900 border-opacity-70 focus:border-b-2 focus:border-white focus:border-opacity-100 resize-none focus:outline-none"
+                className="form-input w-[98%] h-[60px] md:h-[100px] text-xl py-2 md:mx-3 bg-transparent placeholder:text-white border-b border-solid border-gray-200 border-opacity-70 focus:border-b-2 focus:border-white focus:border-opacity-100 resize-none focus:outline-none"
                 style={{ fontFamily: "Gilroy-Regular" }}
                 spellCheck="false"
               ></textarea>
