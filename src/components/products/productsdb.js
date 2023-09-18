@@ -18,7 +18,7 @@ export const productList = {
     {
       id: 4,
       name: "Product 4",
-      image: "https://i.hizliresim.com/sjbc4qf.png",
+      image: "https://i.hizliresim.com/k35iip9.jpg",
     },
     {
       id: 15,

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 
 import { productList } from "./productsdb";
 
 import "./style/style.css";
-
 import "./style/product-card.css";
-import { Link } from "react-router-dom";
 
 function ProductList() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -118,83 +117,34 @@ function ProductList() {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 max-w-screen-2xl">
               {filteredProducts.map((product) => (
-                <div class="wrapper" key={product.id}>
-                  <div class="container">
-                    {/* <div
-                      class="top "
-                      style={{ background: `url(${product.image}) no-repeat center center` }}
-                    ></div> */}
-                    <div className="w-full h-full">
-                      <img
-                        src={product.image}
-                        className="w-full h-full object-cover"
-                        alt=""
-                      />
-                      <div class="bottom"></div>
-                      <div class="left">
-                        <div class="details">
-                          <h1>{product.name}</h1>
-                          <p>£250</p>
-                        </div>
-                        <div class="buy">
-                          <i class="material-icons">add_shopping_cart</i>
+                <div className="item" key={product.id}>
+                  <div className="item-wrapper">
+                    <div className="content-wrapper">
+                      <div className="img-container">
+                        <div className="bg-square"></div>
+                        <img
+                          className="item-img"
+                          src={product.image}
+                          alt={product.name}
+                        />
+                      </div>
+
+                      <div className="content-text">
+                        <div className="item-name">{product.name}</div>
+                        <div className="item-subtext-container">
+                          <span className="item-subtext subtext-mfr">
+                            AzamTx
+                          </span>
+                          <span className="item-subtext subtext-model">
+                            #TX1512
+                          </span>
                         </div>
                       </div>
-                      <div class="right">
-                        <div class="done">
-                          <i class="material-icons">done</i>
-                        </div>
-                        <div class="details">
-                          <h1>Chair</h1>
-                          <p>Added to your cart</p>
-                        </div>
-                        <div class="remove">
-                          <i class="material-icons">clear</i>
-                        </div>
-                      </div>
+                    </div>
+                    <div className="view-more-btn">
+                      Product Details <span className="view-symbol">+</span>
                     </div>
                   </div>
-                  {/* <div class="inside">
-                    <div class="icon">
-                      <i class="material-icons">info_outline</i>
-                    </div>
-                    <div class="contents">
-                      <table>
-                        <tr>
-                          <th>Width</th>
-                          <th>Height</th>
-                        </tr>
-                        <tr>
-                          <td>3000mm</td>
-                          <td>4000mm</td>
-                        </tr>
-                        <tr>
-                          <th>Something</th>
-                          <th>Something</th>
-                        </tr>
-                        <tr>
-                          <td>200mm</td>
-                          <td>200mm</td>
-                        </tr>
-                        <tr>
-                          <th>Something</th>
-                          <th>Something</th>
-                        </tr>
-                        <tr>
-                          <td>200mm</td>
-                          <td>200mm</td>
-                        </tr>
-                        <tr>
-                          <th>Something</th>
-                          <th>Something</th>
-                        </tr>
-                        <tr>
-                          <td>200mm</td>
-                          <td>200mm</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div> */}
                 </div>
               ))}
             </div>

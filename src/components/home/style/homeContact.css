@@ -23,8 +23,13 @@
     color: #fff !important;
 }
 
-/* .css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
     border-bottom: 1px solid #ffffffb9 !important;
+}
+
+.css-zrqpq1::before {
+    border-bottom: 1px solid #ffffffb9 !important;
+
 }
 
 .css-v4u5dn-MuiInputBase-root-MuiInput-root:after {
@@ -33,4 +38,4 @@
 
 .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
     color: #ffffffd3 !important;
-} */
+}

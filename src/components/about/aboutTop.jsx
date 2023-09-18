@@ -8,7 +8,7 @@ function AboutTop() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="min-h-screen">
+      <div className="md:min-h-[screen]">
         <div className="flex flex-col justify-center items-center h-96 bg- red-500 bg-aboutus">
           <Fade top>
             <h1
