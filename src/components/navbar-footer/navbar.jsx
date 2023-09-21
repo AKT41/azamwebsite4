@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import React, { useRef, useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import "./style/style.css";
@@ -19,10 +19,13 @@ function Navbar() {
     setCurrentLanguage(newLanguage);
   };
   // const extraWidth = window.location.pathname === "/Ürünlerimiz" ? 20 : 0;
-
   const clickHandle = (e) => {
-    const { top, width, height } = e.target.getBoundingClientRect();
-    const left = e.target.offsetLeft;
+    const element = e.target;
+    const width = element.offsetWidth;
+    const height = element.offsetHeight;
+    const left = element.offsetLeft;
+    const top = element.offsetTop;
+
     setPosition({
       left,
       top,
@@ -32,18 +35,26 @@ function Navbar() {
 
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   const ref = useRef();
 
   useEffect(() => {
     const el = ref.current.querySelector(".active");
-    const { top, width, height } = el.getBoundingClientRect();
-    const left = el.offsetLeft;
-    setPosition({
-      left,
-      top,
-      width,
-      height,
-    });
+    const element = el;
+
+    if (element) {
+      const width = element.offsetWidth;
+      const height = element.offsetHeight;
+      const left = element.offsetLeft;
+      const top = element.offsetTop;
+
+      setPosition({
+        left,
+        top,
+        width,
+        height,
+      });
+    }
   }, []);
 
   const flagImage =
@@ -51,6 +62,23 @@ function Navbar() {
       ? "https://i.hizliresim.com/he7t4iy.png"
       : "https://i.hizliresim.com/5fe14h3.png";
 
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollTo = params.get("scrollTo");
+
+    if (scrollTo) {
+      const element = document.getElementById(scrollTo);
+
+      if (element) {
+        const yOffset = -100;
+        const y = element.offsetTop + window.pageYOffset + yOffset;
+
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+  }, [location.search]);
 
   return (
     <>
