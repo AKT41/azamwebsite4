@@ -117,11 +117,11 @@ function ProductList() {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 max-w-screen-2xl">
               {filteredProducts.map((product) => (
-                <div className="item" key={product.id}>
+                <div className="item group" key={product.id}>
                   <div className="item-wrapper">
                     <div className="content-wrapper">
                       <div className="img-container">
-                        <div className="bg-square"></div>
+                        <div className="bg-square transition-all duration-300 group-hover:rotate-0 rotate-45"></div>
                         <img
                           className="item-img"
                           src={product.image}
@@ -141,9 +141,12 @@ function ProductList() {
                         </div>
                       </div>
                     </div>
-                    <div className="view-more-btn">
+                    <Link
+                      to={`/Ürünlerimiz/${product.slug}`}
+                      className="view-more-btn"
+                    >
                       Product Details <span className="view-symbol">+</span>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               ))}

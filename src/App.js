@@ -2,6 +2,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Products from "./pages/products";
+import ProductDetails from "./pages/products/[slug]";
 import Error404 from "./components/errors/404";
 
 import Navbar from "./components/navbar-footer/navbar";
@@ -27,7 +28,7 @@ function App() {
         <Route path="/Hakkımızda" element={<About />} />
         <Route path="/İletişim" element={<Contact />} />
         <Route path="/Ürünlerimiz" element={<Products />} />
-
+        <Route path="/Ürünlerimiz/:slug" element={<ProductDetails />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

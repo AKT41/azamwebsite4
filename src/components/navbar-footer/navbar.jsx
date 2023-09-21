@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import React, { useRef, useState, useEffect } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import "./style/style.css";
@@ -51,23 +51,6 @@ function Navbar() {
       ? "https://i.hizliresim.com/he7t4iy.png"
       : "https://i.hizliresim.com/5fe14h3.png";
 
-  const location = useLocation();
-
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const scrollTo = params.get("scrollTo");
-
-    if (scrollTo) {
-      // scrollTo değeri mevcutsa, ilgili id'ye gitmek için JavaScript kullanın
-      const element = document.getElementById(scrollTo);
-      if (element) {
-        const yOffset = -100; // İstenen yerden biraz yukarı kaydırmak için bir yOffset ekleyebilirsiniz
-        const y =
-          element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      }
-    }
-  }, [location.search]);
 
   return (
     <>

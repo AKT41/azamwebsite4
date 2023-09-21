@@ -183,10 +183,12 @@ table {
     font-family: "Gilroy-Regular";
     src: local("Gilroy-Regular"), url("../src/fonts/Gilroy-Regular.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Gilroy-Bold";
     src: local("Gilroy-Bold"), url("../src/fonts/Gilroy-Bold.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Gilroy-SemiBold";
     src: local("Gilroy-SemiBold"), url("../src/fonts/Gilroy-SemiBold.ttf") format("truetype");
@@ -207,4 +209,8 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 
+}
+
+#gtx-trans {
+    background-color: red;
 }

@@ -26,10 +26,7 @@ function HomeMiddle() {
               {" "}
               <div className="cards flex items-center justify-center md:flex-row flex-col gap-6 md:gap-0">
                 <div className="product-card w-[90%] mx-auto md:w-1/3">
-                  <Link
-                    to="/Ürünlerimiz/Boylerler"
-                    className="product-card-desc"
-                  >
+                  <Link to="/Ürünlerimiz" className="product-card-desc">
                     <div className="product-card-text items-center justify-center flex flex-col md:block">
                       <img src={boilerİmg} alt="boiler" className="w-10/12" />
                       <h3
@@ -49,10 +46,7 @@ function HomeMiddle() {
                   </Link>
                 </div>
                 <div className="product-card w-[90%] mx-auto md:w-1/3">
-                  <Link
-                    to="/Ürünlerimiz/Kombiler"
-                    className="product-card-desc"
-                  >
+                  <Link to="/Ürünlerimiz" className="product-card-desc">
                     <div className="product-card-text items-center  justify-center md:items-start md:justify-start flex flex-col md:flex-col-reverse ">
                       <img src={boilerİmg} alt="boiler" className="w-10/12" />
                       <div className="flex md:items-start md:justify-start items-center justify-center flex-col">
@@ -74,10 +68,7 @@ function HomeMiddle() {
                   </Link>
                 </div>
                 <div className="product-card w-[90%] mx-auto md:w-1/3 mb-12 md:mb-0">
-                  <Link
-                    to="/Ürünlerimiz/Boylerler"
-                    className="product-card-desc"
-                  >
+                  <Link to="/Ürünlerimiz" className="product-card-desc">
                     <div className="product-card-text items-center justify-center flex flex-col md:block">
                       <img src={boilerİmg} alt="boiler" className="w-10/12" />
                       <h3
