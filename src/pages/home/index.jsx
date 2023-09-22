@@ -2,6 +2,8 @@ import HomeTop from "../../components/home";
 import HomeMiddle from "../../components/home/homeMiddle.jsx";
 import HomeContact from "../../components/home/homeContact";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
+import { t } from "i18next";
 
 export default function Home() {
   return (
@@ -10,6 +12,15 @@ export default function Home() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
+      {" "}
+      <Helmet>
+        <title>{t("NavbarProducts")} | Azam Tx</title>
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="https://i.hizliresim.com/rzffzme.jpg"
+        />
+      </Helmet>
       <HomeTop />
       <HomeMiddle />
       <HomeContact id="contactHome" />

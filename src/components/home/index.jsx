@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import homebg from "./assets/home-bg-top.png";
 
 import "./style/style.css";
+import { Link } from "react-router-dom";
 
 function HomeTop() {
   const { t } = useTranslation();
@@ -30,12 +31,12 @@ function HomeTop() {
               {" "}
               {t("Homebg-text2")}
             </h2>
-            <a
-              href="/Hakkımızda"
+            <Link
+              href={t("NavbarAbout")}
               className="text-white mt-2 text-[1.7rem] btn-graident py-3 relative z-10 !cursor-pointer  px-4 tracking-wide rounded-full transition-all duration-300 outline-outward hover:!bg-red-600"
             >
               {t("Homebg-btn-more")}
-            </a>
+            </Link>
           </div>
         </Fade>
       </div>

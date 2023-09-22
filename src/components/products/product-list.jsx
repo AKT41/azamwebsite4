@@ -6,10 +6,12 @@ import { productList } from "./productsdb";
 
 import "./style/style.css";
 import "./style/product-card.css";
+import { useTranslation } from "react-i18next";
 
 function ProductList() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Initially, display all products
@@ -32,12 +34,12 @@ function ProductList() {
     <>
       <div className="app-container mt-20 w-full mx-auto max-w-7xl min-h-[100vh]">
         <div className="app-content">
-          <div className="app-content-header">
+          <div className="app-content-header mt-8">
             <Fade top>
               <h1 className="app-content-headerText">Ürünlerimiz</h1>
             </Fade>
           </div>
-          <div className="app-content-actions">
+          <div className="app-content-actions mb-5">
             <Fade left>
               <input
                 className="search-bar border border-solid"
@@ -49,108 +51,69 @@ function ProductList() {
             </Fade>
           </div>
           <div className="products-area-wrapper gridView">
-            <div className="products-header">
-              <div className="product-cell image">
-                Ürünler
-                <button className="sort-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div className="product-cell category">
-                Kullanım Alanı
-                <button className="sort-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div className="product-cell status-cell">
-                Stok
-                <button className="sort-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div className="product-cell price">
-                Fiyat
-                <button className="sort-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 max-w-screen-2xl">
-              {filteredProducts.map((product) => (
-                <div className="item group" key={product.id}>
-                  <div className="item-wrapper">
-                    <div className="content-wrapper">
-                      <div className="img-container">
-                        <div className="bg-square transition-all duration-300 group-hover:rotate-0 rotate-45"></div>
-                        <img
-                          className="item-img"
-                          src={product.listImage}
-                          alt={product.name}
-                        />
-                      </div>
+            <Fade bottom cascade>
+              <div className="flex flex-wrap items-center justify-center gap-4 max-w-screen-2xl overflow-hidden">
+                {filteredProducts.map((product) => (
+                  <div className="item group overflow-hidden" key={product.id}>
+                    <div className="item-wrapper">
+                      <div className="content-wrapper">
+                        <div className="img-container">
+                          <div className="bg-square transition-all duration-300 group-hover:rotate-0 rotate-45"></div>
+                          <img
+                            className="item-img transition-all duration-300 scale-125 group-hover:scale-150 hover:z-10 relative"
+                            src={product.listImage}
+                            alt={product.name}
+                          />
+                        </div>
 
-                      <div className="content-text">
-                        <div className="item-name">{product.name}</div>
-                        <div className="item-subtext-container">
-                          <span className="item-subtext subtext-mfr">
-                            AzamTx
-                          </span>
-                          <span className="item-subtext subtext-model">
-                            #TX1512
-                          </span>
+                        <div className="content-text">
+                          <div
+                            className="item-name line-clamp-1"
+                            title={product.name}
+                          >
+                            {product.name}
+                          </div>
+                          <div className="item-subtext-container">
+                            <span className="item-subtext subtext-mfr">
+                              Azam Tx{" "}
+                            </span>
+                            <span className="item-subtext subtext-model">
+                              #TX1512d
+                            </span>
+                          </div>
                         </div>
                       </div>
+                      <Link
+                        to={`/${t("NavbarProducts")}/${product.slug}`}
+                        className="view-more-btn peer flex items-center justify-center gap-2"
+                      >
+                        {t("ProductDetails")}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="icon icon-tabler icon-tabler-plus view-symbol rotate-animate group-hover:rotate-[360deg]"
+                          width="17"
+                          height="17"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.4"
+                          stroke="currentColor"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          ></path>
+                          <path d="M12 5l0 14"></path>
+                          <path d="M5 12l14 0"></path>
+                        </svg>
+                      </Link>
                     </div>
-                    <Link
-                      to={`/Ürünlerimiz/${product.slug}`}
-                      className="view-more-btn"
-                    >
-                      Product Details <span className="view-symbol">+</span>
-                    </Link>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </Fade>
           </div>
         </div>
       </div>

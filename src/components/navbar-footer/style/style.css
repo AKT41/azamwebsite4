@@ -65,6 +65,14 @@
     font-family: 'Antonio', sans-serif;
 }
 
+.btn-graident-wp {
+    background: linear-gradient(77.04deg, rgb(2, 155, 40) 0%, rgb(38, 218, 2) 100%);
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    font-family: 'Antonio', sans-serif;
+}
+
 .outline-outward {
     display: inline-block;
     position: relative;
@@ -89,6 +97,14 @@
 
 .outline-outward:hover:before {
     border-color: rgba(235, 50, 4, 0.548);
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+}
+
+.outline-outward-wp:hover:before {
+    border-color: rgb(38, 218, 2);
     top: -6px;
     right: -6px;
     bottom: -6px;
@@ -160,6 +176,7 @@
 .footer-items .footer-item:nth-child(even) {
     color: #B32518;
 }
+
 .blur-effect {
     position: relative;
 }

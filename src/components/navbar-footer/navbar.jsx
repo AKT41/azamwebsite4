@@ -80,6 +80,11 @@ function Navbar() {
     }
   }, [location.search]);
 
+  const handleRefreshPage = () => {
+    window.location.reload(); // Sayfayı yenile
+    window.location.href = "/"; // Ana sayfaya yönlendir
+  };
+
   return (
     <>
       <nav className="md:block hidden nav-shadow">
@@ -115,7 +120,7 @@ function Navbar() {
                 {" "}
                 <NavLink
                   onClick={clickHandle}
-                  to="/Hakkımızda"
+                  to={`/${t("NavbarAbout")}`}
                   className="nav-item"
                 >
                   {t("NavbarAbout")}
@@ -125,7 +130,7 @@ function Navbar() {
                 {" "}
                 <NavLink
                   onClick={clickHandle}
-                  to="/ürünlerimiz"
+                  to={`/${t("NavbarProducts")}`}
                   className="nav-item flex items-center justify-center gap-1 relati ve"
                 >
                   <span>{t("NavbarProducts")}</span>
@@ -135,7 +140,7 @@ function Navbar() {
                 {" "}
                 <NavLink
                   onClick={clickHandle}
-                  to="/İletişim"
+                  to={`/${t("NavbarContact")}`}
                   className="nav-item"
                 >
                   {t("NavbarContact")}
@@ -143,7 +148,10 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="pb-4 flex items-center justify-center gap-4">
+          <div
+            className="pb-4 flex items-center justify-center gap-4"
+            onClick={handleRefreshPage}
+          >
             <div className="relative group" onClick={toggleLanguage}>
               <img
                 src={flagImage}

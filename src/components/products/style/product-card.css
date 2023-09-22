@@ -134,6 +134,15 @@
   transition: all 0.3s ease-out;
 }
 
+.rotate-animate {
+  transition: all 0.3s ease-out;
+}
+
+.view-more-btn:hover .rotate-animate {
+  transition: all 0.3s ease-out;
+  transform: rotate(180deg);
+}
+
 .item-details-container {
   position: absolute;
   bottom: 0;

@@ -4,13 +4,6 @@
     user-select: none;
 }
 
-.previousButton:hover,
-.nextButton:hover {
-    background-color: #5e5e5e63;
-    cursor: pointer;
-    /* transform: scale(1); */
-}
-
 .previousButton,
 .nextButton {
     align-items: center;
@@ -20,7 +13,7 @@
 
 .previousButton svg polygon,
 .nextButton svg polygon {
-    fill: rgb(216, 216, 216);
+    fill: rgba(235, 50, 4, 0.548);
 }
 
 .disabled {
@@ -30,4 +23,35 @@
 
 .disabled {
     display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        width: 100% !important;
+    }
+
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items:not(:first-child)::before {
+    content: '/';
+    padding: 0 8px;
+    color: #5e5e5e63;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    left: -5px;
 }

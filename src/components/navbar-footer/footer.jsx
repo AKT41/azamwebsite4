@@ -51,18 +51,24 @@ function Footer() {
               <Fade bottom cascade>
                 <ul className="flex items-center justify-center relative z-[10] gap-4 md:text-2xl footer-items">
                   <li className="footer-item">
-                    <NavLink to="/">{t("NavbarHome")}</NavLink>
+                    <NavLink onClick={goTop} to="/">
+                      {t("NavbarHome")}
+                    </NavLink>
                   </li>
                   <li className="footer-item">
-                    <NavLink to="/Hakkımızda">{t("NavbarAbout")}</NavLink>
+                    <NavLink to={`/${t("NavbarAbout")}`} onClick={goTop}>
+                      {t("NavbarAbout")}
+                    </NavLink>
                   </li>
                   <li className="footer-item relative group">
-                    <NavLink onClick={toggleMenu} to="/Ürünlerimiz">
+                    <NavLink onClick={goTop} to={`/${t("NavbarProducts")}`}>
                       {t("NavbarProducts")}
                     </NavLink>
                   </li>
                   <li className="footer-item">
-                    <NavLink to="/İletişim">{t("NavbarContact")}</NavLink>
+                    <NavLink to={`/${t("NavbarContact")}`} onClick={goTop}>
+                      {t("NavbarContact")}
+                    </NavLink>
                   </li>
                 </ul>
               </Fade>
@@ -206,7 +212,7 @@ function Footer() {
           {isTurkish ? (
             <>
               &copy;
-              {new Date().getFullYear()} AzamTX. Her hakkı saklıdır.{" "}
+              {new Date().getFullYear()} Azam Tx. Her hakkı saklıdır.{" "}
               <Link
                 className="text-white hover:underline"
                 to="https://ahmetkemal.dev"
@@ -219,7 +225,7 @@ function Footer() {
             </>
           ) : (
             <p style={{ fontFamily: "Gilroy-Light" }}>
-              &copy; {new Date().getFullYear()} AzamTX. All Rights Reserved.
+              &copy; {new Date().getFullYear()} Azam Tx. All Rights Reserved.
               Designed By{" "}
               <Link
                 className="text-white hover:underline"
