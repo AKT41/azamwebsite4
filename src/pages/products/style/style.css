@@ -1,0 +1,33 @@
+.slider {
+    width: 45% !important;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.previousButton:hover,
+.nextButton:hover {
+    background-color: #5e5e5e63;
+    cursor: pointer;
+    /* transform: scale(1); */
+}
+
+.previousButton,
+.nextButton {
+    align-items: center;
+    transform: scale(1) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.previousButton svg polygon,
+.nextButton svg polygon {
+    fill: rgb(216, 216, 216);
+}
+
+.disabled {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+.disabled {
+    display: none !important;
+}

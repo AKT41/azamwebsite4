@@ -124,7 +124,7 @@ function ProductList() {
                         <div className="bg-square transition-all duration-300 group-hover:rotate-0 rotate-45"></div>
                         <img
                           className="item-img"
-                          src={product.image}
+                          src={product.listImage}
                           alt={product.name}
                         />
                       </div>
