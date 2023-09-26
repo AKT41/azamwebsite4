@@ -32,7 +32,7 @@ function HomeTop() {
               {t("Homebg-text2")}
             </h2>
             <Link
-              href={t("NavbarAbout")}
+              to={`/${t("NavbarAbout")}`}
               className="text-white mt-2 text-[1.7rem] btn-graident py-3 relative z-10 !cursor-pointer  px-4 tracking-wide rounded-full transition-all duration-300 outline-outward hover:!bg-red-600"
             >
               {t("Homebg-btn-more")}
