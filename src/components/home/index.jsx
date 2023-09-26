@@ -16,7 +16,7 @@ function HomeTop() {
       <div
         className="h-screen w-full bg-cover relative overflow-hidden home-main-bg"
         style={{
-          backgroundImage: `url(${homebg})`,
+          backgroundImage: `url(${"https://i.hizliresim.com/ocssvpd.png"})`,
           boxShadow: "0px 25px 100px rgba(0, 0, 0, 0.5)", // Gölge efekti ayarları
           transition: "box-shadow 0.3s ease-in-out", // Yumuşak geçiş efekti
         }}
