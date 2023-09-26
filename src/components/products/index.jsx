@@ -12,7 +12,7 @@ export default function Products() {
       <div className="flex flex-col justify-center items-center h-96 bg-products">
         <Fade top>
           <h1
-            className="text-4xl md:text-5xl font-bold text-gray-800 transition-all duration-300 hover:tracking-wider mt-24 title-bg p-4 pr-6"
+            className="text-4xl md:text-5xl font-bold text-gray-800 transition-all duration-300 hover:tracking-wider mt-24 title-bg p-4 md:pr-6 pr-8"
             style={{
               fontFamily: "Gilroy-SemiBold",
             }}
@@ -23,7 +23,7 @@ export default function Products() {
         <Fade top delay={200}>
           {" "}
           <p
-            className="text-lg  md:text-2xl text-gray-800 transition-all duration-300 hover:tracking-wider mt-7 title-bg p-4 pr-12"
+            className="text-base  md:text-2xl text-gray-800 transition-all duration-300 hover:tracking-wider mt-7 title-bg p-4 md:pr-12 pr-8"
             style={{
               fontFamily: "Gilroy-SemiBold",
             }}
@@ -32,7 +32,7 @@ export default function Products() {
           </p>
         </Fade>
       </div>
-      <ProductList/>
+      <ProductList />
     </div>
   );
 }

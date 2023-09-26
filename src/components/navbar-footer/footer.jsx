@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, Link } from "react-router-dom";
 import { Fade } from "react-reveal";
@@ -13,19 +12,14 @@ function Footer() {
 
   const isTurkish = i18n.language === "tr";
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const goTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <>
       <footer className="footer-bg -mt-7">
-        <div className="relative mx-auto px-4 py-16 sm:px-6 lg:px-8 text-white">
+        <div className="relative mx-auto px-4 pt-16 pb-10 sm:px-6 lg:px-8 text-white">
           <div className="flex md:flex-row flex-col justify-center md:justify-between items-center mt-3">
             <div className="relative">
               <NavLink
@@ -206,7 +200,7 @@ function Footer() {
       </footer>
       <div className="flex text-white bg-[#161715] justify-between items-center">
         <p
-          className="text-left pl-5 text-sm  selection:bg-yellow-600 selection:text-blue-700"
+          className="pl-5 md:text-sm text-xs text-center selection:bg-yellow-600 selection:text-blue-700 w-full"
           style={{ fontFamily: "Gilroy-Light" }}
         >
           {isTurkish ? (

@@ -67,3 +67,10 @@
 .underlineffect .acitve {
     color: red !important;
 }
+
+.mobile-nav {
+    background: -webkit-linear-gradient(45deg, rgba(240, 0, 24, 0.904) 0%, rgba(243, 98, 2, 0.904) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .3s;
+}

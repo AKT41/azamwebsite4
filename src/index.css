@@ -212,5 +212,9 @@ body {
 }
 
 #gtx-trans {
-    background-color: red;
+    background-color: #aa0909;
+}
+
+#contact {
+    margin-top: 5rem;
 }

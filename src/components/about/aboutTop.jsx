@@ -18,7 +18,7 @@ function AboutTop() {
   return (
     <>
       <div className="md:min-h-[screen]">
-        <div className="flex flex-col justify-center items-center h-96 bg- red-500 bg-aboutus">
+        <div className="flex flex-col justify-center items-center h-96 bg- red-500 bg-aboutus md:mb-0 mb-5">
           <Fade top>
             <h1
               className="text-4xl md:text-5xl font-bold text-gray-800 transition-all duration-300 hover:tracking-wider mt-24 title-bg p-4 pr-6"
@@ -32,7 +32,7 @@ function AboutTop() {
           <Fade top delay={200}>
             {" "}
             <p
-              className="text-xl md:text-2xl text-gray-800 transition-all duration-300 hover:tracking-wider mt-7 title-bg p-4 pr-8"
+              className="text-base md:text-2xl text-gray-800 transition-all duration-300 hover:tracking-wider mt-7 title-bg p-4 pr-8"
               style={{
                 fontFamily: "Gilroy-SemiBold",
               }}
@@ -41,7 +41,7 @@ function AboutTop() {
             </p>
           </Fade>
         </div>
-        <div className="max-w-screen-xl mx-auto min-h-screen flex items-center flex-col justify-around md:-mt-24 -mt-16">
+        <div className="max-w-screen-xl mx-auto min-h-screen flex items-center flex-col justify-around md:-mt-24 -mt-5 md:mb-0">
           <div className="flex flex-col gap-8 md:flex-row justify-between items-center h-full">
             <div className="md:w-1/2 w-8/12">
               <Tilt
@@ -96,7 +96,7 @@ function AboutTop() {
                 </div>
               </CSSTransition>
               <p
-                className="text-blue-500 cursor-pointer pl-4 pt-2"
+                className="text-blue-500 cursor-pointer pl-4 pt-2 md:mb-0 mb-16"
                 style={{ fontFamily: "Gilroy-Light" }}
                 onClick={toggleReadMore}
               >

@@ -29,12 +29,21 @@
 
   "AboutBoilerText": "Boilers are devices that provide hot water quickly and reliably. They allow you to use hot water instantly or store it for everyday needs like cooking, bathing, and cleaning. There are various models available, running on different energy sources.",
   "AboutSlogan": "We are a team of professionals",
-  
+
   "AboutUsTitle": "Who We Are?",
   "AboutUsText": "Azam TX Heat Technologies, which was established with the industrial knowledge and experience of the Apaydın family, which has a century of history in the national economy and has been operating in the industrial sector in the last 30 years, has been producing enamel coated polyurethane insulated boilers, combi boilers and water heaters in a closed area of 30.000 square meters and aims to work with the combination of high quality and reasonable price policy in the heat sector. Azam TX Heat Technologies aims to reach a reputable position in the domestic market in a short time and to become a preferred brand among domestic boiler, combi boiler and water heater manufacturers.",
-
+  "AboutUsText2": "Kar amacından ziyade müşteri memnuniyetini hedefleyen, kaliteli ürünü doğru ve verimli sistem uygulaması ile tüketiciye buluşturmayı amaç edinmiş ilkemiz, sektördeki gelişmeleri yakından takip eden genç ve dinamik kadromuz, pratik, hızlı, kullanıcı ve çözüm odaklı teknik servis ağımız ve belki de en önemlisi sadece gelişmeleri takip etmekle kalmayıp yüksek teknolojiden faydalanılarak yapılan çalışmaları başarıyla ürünlere entegre ederek yeni nesil teknolojiler geliştiren AR-GE departmanız ile sektörde en iyi olmayı amaç edinmektedir.Azam TX Isıtma Teknolojileri, konut ve ticari uygulamalar için yüksek kaliteli ısıtma çözümlerinin önde gelen tedarikçisidir. Mükemmelliğe ve yeniliğe olan bağlılığımızla, müşterilerimizin çeşitli ısıtma ihtiyaçlarını karşılamayı ve enerji verimliliği ile güvenilirliği sağlamayı hedefliyoruz.",
+  "AboutUsText3": "Azam TX olarak, yalnızca olağanüstü performans sunan ısıtma sistemleri sağlamanın değil, aynı zamanda maliyet tasarrufuna ve çevresel sürdürülebilirliğe katkıda bulunmanın önemini anlıyoruz. Deneyimli uzmanlarımızdan oluşan ekibimiz, ısıtma endüstrisindeki geniş bilgi birikimini ve uzmanlığı bir araya getirerek, sektör standartlarını aşan son teknoloji ürünleri tasarlamamıza ve üretmemize olanak sağlamaktadır.",
+  "AboutUsText4": "Firma, 100 litre ile 6000 litre arasında değişen kapasitelerde emaye kaplı tek ve çift serpantinli boyler, kombi ve su ısıtıcısı üretimlerini gerçekleştirmektedir. Yüksek kalite standartlarına sahip ürünleri, tam zamanında teslimat ve rekabetçi fiyat politikasıyla müşterilerine sunmaktadır",
+  
   "OurMissonTitle": "Our Mission",
   "OurMissonText": "At Azam TX Heat Technologies, our mission is to provide high-quality heating solutions, meeting our customers' residential and commercial heating needs at the highest level while ensuring energy efficiency and reliability. We are committed to excellence, placing customer satisfaction at the core of our values, contributing to environmental sustainability, and delivering high-quality products at competitive prices.",
   "OurVisionTitle": "Our Vision",
-  "OurVisionText": "As Azam TX Heat Technologies, our vision is to be recognized and preferred as a leading brand in the industry. We aim to establish a reputable position in the domestic market with our high-quality products, earn the trust of our customers, and continually strive to excel in the sector. Through our Research and Development department, we aspire to develop cutting-edge technologies, offering cost savings to our customers while contributing to environmental sustainability. We pledge to provide the best service to our customers."
+  "OurVisionText": "As Azam TX Heat Technologies, our vision is to be recognized and preferred as a leading brand in the industry. We aim to establish a reputable position in the domestic market with our high-quality products, earn the trust of our customers, and continually strive to excel in the sector. Through our Research and Development department, we aspire to develop cutting-edge technologies, offering cost savings to our customers while contributing to environmental sustainability. We pledge to provide the best service to our customers.",
+
+  "ProductTechnicalSpecifications": "technical specifications",
+  "GetInformation": "Get information",
+  "ReadMore": "Read more",
+  "ShowLess": "Show less",
+  "ProductDetails": " Product Details"
 }

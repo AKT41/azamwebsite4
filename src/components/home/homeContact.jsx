@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-reveal";
-// import { createTheme } from "@mui/material/styles";
 import { TextField } from "@mui/material";
 
 import "./style/homeContact.css";
@@ -9,23 +8,6 @@ import "./style/homeContact.css";
 function HomeContact(props) {
   const { t } = useTranslation();
   const contactFormId = props.id;
-
-  // const theme = createTheme({
-  //   palette: {
-  //     primary: {
-  //       light: "#fff",
-  //       main: "#3f50b5",
-  //       dark: "#002884",
-  //       contrastText: "#fff",
-  //     },
-  //     secondary: {
-  //       light: "#ff7961",
-  //       main: "#f44336",
-  //       dark: "#ba000d",
-  //       contrastText: "#000",
-  //     },
-  //   },
-  // });
 
   return (
     <>
