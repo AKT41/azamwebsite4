@@ -3,8 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
 
-import boilerİmg from "./assets/boiler-img2.png";
-
 import "./style/style.css";
 
 function HomeMiddle() {

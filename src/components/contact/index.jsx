@@ -1,11 +1,11 @@
-import HomeContact from "../home/homeContact";
+import ContactForm from "./ContactForm";
 
-function ContactForm() {
+function Contact() {
   return (
     <>
-      <HomeContact id="contact" />
+      <ContactForm />
     </>
   );
 }
 
-export default ContactForm;
+export default Contact;
