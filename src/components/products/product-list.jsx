@@ -36,7 +36,7 @@ function ProductList() {
         <div className="app-content">
           <div className="app-content-header mt-8">
             <Fade top>
-              <h1 className="app-content-headerText">Ürünlerimiz</h1>
+              <h1 className="app-content-headerText">{t("NavbarProducts")}</h1>
             </Fade>
           </div>
           <div className="app-content-actions mb-5">
@@ -52,7 +52,7 @@ function ProductList() {
           </div>
           <div className="products-area-wrapper gridView">
             <Fade bottom cascade>
-              <div className="flex flex-wrap items-center justify-center gap-4 max-w-screen-2xl overflow-hidden">
+              <div className="flex flex-wrap items-center justify-center gap-4 md:max-w-screen-2xl overflow-hidden">
                 {filteredProducts.map((product) => (
                   <div className="item group overflow-hidden" key={product.id}>
                     <div className="item-wrapper">

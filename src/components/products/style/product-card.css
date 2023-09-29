@@ -18,6 +18,14 @@
   box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 768px) {
+  .item {
+    margin: 25px 1.2rem 10px 1.2rem;
+
+  }
+  
+}
+
 .item-wrapper {
   position: relative;
   width: 100%;
