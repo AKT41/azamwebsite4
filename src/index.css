@@ -218,3 +218,10 @@ body {
 #contact {
     margin-top: 5rem;
 }
+
+@media screen and (max-width: 375px) {
+
+    html {
+        font-size: 90%;
+    }
+}

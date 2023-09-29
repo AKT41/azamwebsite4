@@ -54,13 +54,13 @@ function AboutTop() {
                 glareColor="#fff"
                 glarePosition="all"
               >
-                <Fade left>
-                  <img
-                    className="w-full drop-shadow-xl object-contain cursor-pointer rounded-2xl"
-                    src="https://i.hizliresim.com/6p8fbqw.png"
-                    alt="r1"
-                  />
-                </Fade>
+                {/* <Fade left> */}
+                <img
+                  className="w-full drop-shadow-xl object-contain cursor-pointer rounded-2xl"
+                  src="https://i.hizliresim.com/6p8fbqw.png"
+                  alt="r1"
+                />
+                {/* </Fade> */}
               </Tilt>
             </div>
 

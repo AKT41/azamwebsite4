@@ -6,11 +6,12 @@ import { t } from "i18next";
 
 function About() {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    // <motion.div
+    //   initial={{ opacity: 0, scale: 0.5 }}
+    //   animate={{ opacity: 1, scale: 1 }}
+    //   transition={{ duration: 0.5 }}
+    // >
+    <>
       <Helmet>
         <title>{t("NavbarAbout")} | Azam Tx</title>
         <link
@@ -20,7 +21,8 @@ function About() {
         />
       </Helmet>
       <AboutFirst />
-    </motion.div>
+    </>
+    // </motion.div>
   );
 }
 export default About;

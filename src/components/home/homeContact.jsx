@@ -31,7 +31,7 @@ function HomeContact(props) {
         <Fade bottom cascade>
           {" "}
           <form
-            className="relative mx-7 md:mx-auto py-12 px-7 w-full md:w-[1000px] flex flex-col md:gap-6 gap-4 rounded-3xl"
+            className="relative mx-7 md:mx-auto py-12 px-7 w-11/12 md:w-[1000px] flex flex-col md:gap-6 gap-4 rounded-3xl"
             style={{
               fontFamily: "Gilroy-Regular",
 
@@ -140,7 +140,7 @@ function HomeContact(props) {
             </div>
             <div className="form-input w-full flex justify-center items-center md:items-end flex-col md:pr-2 mt-4 md:mt-0">
               <button
-                className="w-full md:w-[250px] border border-solid hover:bg-white text-white hover:text-red-500 py-2 transition-all duration-300 rounded-md text-xl font-semibold"
+                className="w-full md:w-[250px] border border-solid hover:bg-white text-white hover:text-red-500 py-2 transition-all duration-300 rounded-md text-xl"
                 style={{ fontFamily: "Gilroy-Bold" }}
               >
                 {t("HomeContact-Send")}

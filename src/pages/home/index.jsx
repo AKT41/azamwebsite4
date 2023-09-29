@@ -6,11 +6,12 @@ import { Helmet } from "react-helmet";
 
 export default function Home() {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    // <motion.div
+    //   initial={{ opacity: 0, scale: 0.8 }}
+    //   animate={{ opacity: 1, scale: 1 }}
+    //   transition={{ duration: 0.5 }}
+    // >
+    <>
       <Helmet>
         <title>Azam Tx</title>
         <link
@@ -22,6 +23,7 @@ export default function Home() {
       <HomeTop />
       <HomeMiddle />
       <HomeContact id="contactHome" />
-    </motion.div>
+    </>
+    // </motion.div>
   );
 }

@@ -23,6 +23,7 @@ export default function MobileNavbar() {
       : "https://i.hizliresim.com/5fe14h3.png";
 
   const toggle = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     SettoggleMenu(!toggleMenu);
   };
 
@@ -64,7 +65,12 @@ export default function MobileNavbar() {
                 />
               </button>
             </div>
-            <div className={toggleClass} onClick={toggle}>
+            <div
+              className={toggleClass}
+              onClick={() => {
+                SettoggleMenu(!toggleMenu);
+              }}
+            >
               <div className="bar"></div>
               <div className="bar"></div>
               <div className="bar"></div>
@@ -106,6 +112,7 @@ export default function MobileNavbar() {
                 <span className="mobile-nav"> {t("NavbarAbout")}</span>
               </NavLink>
               <NavLink
+                onClick={toggle}
                 to={t("NavbarProducts")}
                 className="text-3xl flex-col"
               >

@@ -1,9 +1,5 @@
-// import React, { useState, useEffect } from "react";
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
-// import { Link } from "react-router-dom";
-
-import homebg from "./assets/home-bg-top.png";
 
 import "./style/style.css";
 import { Link } from "react-router-dom";

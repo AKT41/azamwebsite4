@@ -7,7 +7,7 @@ function MissinAndVision() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="md:min-h-[90vh] h-screen my-16 ">
+      <div className="md:min-h-[90vh] my-20 ">
         <div className="max-w-screen-xl mx-auto flex items-center flex-col justify-around md:-mt-48 -mt-16">
           <div className="flex flex-col md:gap-8 md:flex-row-reverse justify-between items-center">
             <div className="md:w-1/2 w-8/12">

@@ -29,11 +29,12 @@ function ProductDetails() {
     product.name.charAt(0).toUpperCase() + product.name.slice(1).toLowerCase();
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    // <motion.div
+    //   initial={{ opacity: 0, scale: 0.8 }}
+    //   animate={{ opacity: 1, scale: 1 }}
+    //   transition={{ duration: 0.5 }}
+    // >
+    <>
       <Helmet>
         <title>{product.name} | Azam Tx</title>
       </Helmet>
@@ -156,7 +157,8 @@ function ProductDetails() {
           </Fade>
         </div>
       </div>
-    </motion.div>
+    </>
+    // </motion.div>
   );
 }
 
