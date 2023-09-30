@@ -1,5 +1,5 @@
 .bg-products {
-    background: linear-gradient(90deg, #6a040fcc 0%, rgba(231, 93, 4, .8) 100%), url(../assets/water.jpg);
+    background: linear-gradient(90deg, #6a040fcc 0%, rgba(231, 93, 4, .8) 100%), url(../assets/water.jpg);      
     /* background: url(../assets/factory2.jpg); */
     background-size: cover;
     background-repeat: no-repeat;

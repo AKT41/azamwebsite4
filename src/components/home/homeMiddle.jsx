@@ -24,9 +24,16 @@ function HomeMiddle() {
               {" "}
               <div className="cards flex items-center justify-center md:flex-row flex-col gap-6 md:gap-0">
                 <div className="product-card w-[90%] mx-auto md:w-1/3">
-                  <Link to="/Ürünlerimiz" className="product-card-desc">
+                  <Link
+                    to={`/${t("NavbarProducts")}`}
+                    className="product-card-desc"
+                  >
                     <div className="product-card-text items-center justify-center flex flex-col md:block">
-                      <img src="https://i.hizliresim.com/8jepwyw.png" alt="boiler" className="w-10/12 h-80 object-contain" />
+                      <img
+                        src="https://i.hizliresim.com/8jepwyw.png"
+                        alt="boiler"
+                        className="w-10/12 h-80 object-contain"
+                      />
                       <h3
                         className="text-3xl uppercase py-4"
                         style={{ fontFamily: "Gilroy-Bold" }}
@@ -44,9 +51,16 @@ function HomeMiddle() {
                   </Link>
                 </div>
                 <div className="product-card w-[90%] mx-auto md:w-1/3">
-                  <Link to="/Ürünlerimiz" className="product-card-desc">
+                  <Link
+                    to={`/${t("NavbarProducts")}`}
+                    className="product-card-desc"
+                  >
                     <div className="product-card-text items-center  justify-center md:items-start md:justify-start flex flex-col md:flex-col-reverse ">
-                      <img src="https://i.hizliresim.com/6geohvf.png" alt="boiler" className="w-10/12 h-80 object-contain" />
+                      <img
+                        src="https://i.hizliresim.com/6geohvf.png"
+                        alt="boiler"
+                        className="w-10/12 h-80 object-contain"
+                      />
                       <div className="flex md:items-start md:justify-start items-center justify-center flex-col">
                         <h3
                           className="text-3xl uppercase py-4"
@@ -66,9 +80,16 @@ function HomeMiddle() {
                   </Link>
                 </div>
                 <div className="product-card w-[90%] mx-auto md:w-1/3 mb-12 md:mb-0">
-                  <Link to="/Ürünlerimiz" className="product-card-desc">
+                  <Link
+                    to={`/${t("NavbarProducts")}`}
+                    className="product-card-desc"
+                  >
                     <div className="product-card-text items-center justify-center flex flex-col md:block">
-                      <img src="https://i.hizliresim.com/k2pm31a.png" alt="boiler" className="w-10/12 h-80 object-contain  " />
+                      <img
+                        src="https://i.hizliresim.com/k2pm31a.png"
+                        alt="boiler"
+                        className="w-10/12 h-80 object-contain  "
+                      />
                       <h3
                         className="text-3xl uppercase py-4"
                         style={{ fontFamily: "Gilroy-Bold" }}
