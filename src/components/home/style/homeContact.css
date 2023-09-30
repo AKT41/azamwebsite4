@@ -1,6 +1,7 @@
 .home-contact-bg {
     background: linear-gradient(90deg, rgba(106, 4, 15, .8) 0%, rgba(231, 93, 4, .8) 100%), url(../assets/tesis.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: bottom;
 }
 

@@ -4,12 +4,14 @@
     border-radius: 5px;
 }
 
+
 .bg-aboutus {
     background: linear-gradient(90deg, rgba(106, 4, 15, .8) 0%, rgba(231, 93, 4, .8) 100%), url(../assets/factory2.jpg);
     /* background: url(../assets/factory2.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 100% 70%;
+    background-position: 100% 150%;
+    background-attachment: fixed;
 }
 
 

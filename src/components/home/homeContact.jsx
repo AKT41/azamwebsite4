@@ -11,7 +11,7 @@ function HomeContact(props) {
 
   return (
     <>
-      <div className="home-contact-bg h-screen w-full text-white flex flex-col items-center justify-center">
+      <div className="home-contact-bg  h-screen w-full text-white flex flex-col items-center justify-center">
         <Fade bottom cascade>
           {" "}
           <div

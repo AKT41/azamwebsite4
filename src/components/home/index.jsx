@@ -10,9 +10,9 @@ function HomeTop() {
   return (
     <>
       <div
-        className="h-screen w-full bg-cover relative overflow-hidden home-main-bg"
+        className="h-screen w-full bg-fixed bg-cover relative overflow-hidden home-main-bg"
         style={{
-          backgroundImage: `url(${"https://i.hizliresim.com/ocssvpd.png"})`,
+          backgroundImage: `url(${"https://i.hizliresim.com/avef0fr.png"})`,
           boxShadow: "0px 25px 100px rgba(0, 0, 0, 0.5)", // Gölge efekti ayarları
           transition: "box-shadow 0.3s ease-in-out", // Yumuşak geçiş efekti
         }}
