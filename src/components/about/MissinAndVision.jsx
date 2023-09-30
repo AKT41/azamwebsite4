@@ -21,7 +21,7 @@ function MissinAndVision() {
                 glareColor="#fff"
                 glarePosition="all"
               >
-                <Fade right>
+                <Fade left>
                   <img
                     className="w-full drop-shadow-xl object-contain cursor-pointer rounded-2xl overflow-hidden"
                     src="https://i.hizliresim.com/qsyim9k.png"
@@ -81,7 +81,7 @@ function MissinAndVision() {
                 className="text-xl text-gray-800 mt-7 p-4 pr-6"
                 style={{ fontFamily: "Gilroy-Light" }}
               >
-                <Fade right>
+                <Fade left>
                   <span className="overflow-hidden"> {t("OurVisionText")}</span>
                 </Fade>
               </p>
