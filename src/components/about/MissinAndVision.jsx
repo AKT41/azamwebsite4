@@ -81,7 +81,7 @@ function MissinAndVision() {
                 className="text-xl text-gray-800 mt-7 p-4 pr-6"
                 style={{ fontFamily: "Gilroy-Light" }}
               >
-                <Fade left>
+                <Fade bottom>
                   <span className="overflow-hidden"> {t("OurVisionText")}</span>
                 </Fade>
               </p>
